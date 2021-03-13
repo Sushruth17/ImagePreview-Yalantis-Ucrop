@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ImagePreviewActivity">
+
+    <!--ImageView in which image will be set-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_preview_bg"
+        android:layout_margin="50dp"
+        android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:scaleType="centerCrop"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+        <TextView
+            android:id="@+id/tv_image_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/image_preview"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+
+    <!--Button to open camera-->
+    <Button
+        android:id="@+id/camera_btn"
+        android:text="@string/take_selfie"
+        android:textAllCaps="false"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"/>
+
+    <!--Button to open gallery-->
+    <Button
+        android:id="@+id/upload_img"
+        android:text="@string/upload_image"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"/>
+
+</LinearLayout>
